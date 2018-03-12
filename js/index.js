@@ -42,7 +42,7 @@ $(function () {
     })
 
     //企业定制服务
-    $(".qiye_btn").mouseover(function () {
+    $(".qiye_btn").click(function () {
         $(".qiye_btn").removeClass('active');
         $(this).addClass('active')
         var index=$(this).index();

@@ -88,12 +88,26 @@
                 <div class="entry-content-left fl">
                     <div class="select_box">
                         <span>选择城市</span>
-                        <select name="" id="">
-                            <option>北京</option>
+                        <select name=""   style="width:78px;">
+                            <option selected="selected" value="1">北京</option>
+                            <option value="2">天津</option>
+                            <option value="3">河北</option>
+                            <option value="9">上海</option>
+                            <option value="10">江苏</option>
+                            <option value="11">浙江</option>
+                            <option value="16">河南</option>
+                            <option value="17">湖北</option>
+                            <option value="18">湖南</option>
+                            <option value="19">广东</option>
+                            <option value="23">四川</option>
+                            <option value="27">陕西</option>
+                        </select>
+                        <select name=""  id="ddlCid" style="width:78px;">
+                            <option selected="selected" value="1">北京</option>
                         </select>
                     </div>
                     <div class="select_box">
-                        <span>户口性质</span>
+                        <span>人员类别</span>
                         <select name="" id="">
                             <option>北京</option>
                         </select>
@@ -129,12 +143,15 @@
                 <div class="entry-content-left fl">
                     <div class="select_box">
                         <span>选择城市1</span>
-                        <select name="" id="">
-                            <option>北京</option>
+                        <select name=""   style="width:78px;">
+                            <option selected="selected" value="1">北京</option>
+                        </select>
+                        <select name=""  id="" style="width:78px;">
+                            <option selected="selected" value="1">北京</option>
                         </select>
                     </div>
                     <div class="select_box">
-                        <span>户口性质</span>
+                        <span>住房比例</span>
                         <select name="" id="">
                             <option>北京</option>
                         </select>
@@ -341,7 +358,7 @@
                 服务原价：<del>200元</del>
             </div>
             <div class="taocan-xx">
-                服务现价：<em style="color:#00ABFB;">200元</em>
+                服务现价：<em style="color:#00ABFB;">199元</em>
             </div>
         </li>
         <li>
@@ -358,7 +375,7 @@
                 服务原价：<del>600元</del>
             </div>
             <div class="taocan-xx">
-                服务现价：<em style="color:#00ABFB;">360元</em>
+                服务现价：<em style="color:#00ABFB;">359元</em>
             </div>
         </li>
         <li>
@@ -375,7 +392,7 @@
                 服务原价：<del>1200元</del>
             </div>
             <div class="taocan-xx">
-                服务现价：<em style="color:#00ABFB;">500元</em>
+                服务现价：<em style="color:#00ABFB;">499元</em>
             </div>
         </li>
         <li style="margin-right: 0;">
@@ -393,7 +410,7 @@
                 服务原价：<del>2400元</del>
             </div>
             <div class="taocan-xx">
-                服务现价：<em style="color:#00ABFB;">限时免费</em>
+                服务现价：<em style="color:#00ABFB;">399元</em>
             </div>
         </li>
     </ul>
@@ -406,7 +423,7 @@
 
 <!--缴纳公积金s-->
 <div class="module1-shebao w1200">
-    <div class="shebao-nav">缴纳公积金 <span style="background: #F1B700;">个人</span></div>
+    <div class="shebao-nav">缴纳公积金 <span class="circle-2">个人</span></div>
     <ul class="taocan-box">
         <li>
             <div class="taocan-title">
@@ -422,7 +439,7 @@
                 服务原价：<del>200元</del>
             </div>
             <div class="taocan-xx">
-                服务现价：<em style="color:#F1B700;">200元</em>
+                服务现价：<em style="color:#F1B700;">199元</em>
             </div>
         </li>
         <li>
@@ -439,7 +456,7 @@
                 服务原价：<del>600元</del>
             </div>
             <div class="taocan-xx">
-                服务现价：<em style="color:#F1B700;">360元</em>
+                服务现价：<em style="color:#F1B700;">359元</em>
             </div>
         </li>
         <li>
@@ -456,7 +473,7 @@
                 服务原价：<del>1200元</del>
             </div>
             <div class="taocan-xx">
-                服务现价：<em style="color:#F1B700;">500元</em>
+                服务现价：<em style="color:#F1B700;">499元</em>
             </div>
         </li>
         <li style="margin-right: 0;">
@@ -474,7 +491,7 @@
                 服务原价：<del>2400元</del>
             </div>
             <div class="taocan-xx">
-                服务现价：<em style="color:#F1B700;">限时免费</em>
+                服务现价：<em style="color:#F1B700;">800元</em>
             </div>
         </li>
     </ul>
@@ -489,7 +506,7 @@
 
 <!--企业定制服务s-->
 <div class="module1-shebao w1200">
-    <div class="shebao-nav">企业定制服务 <span style="background: #22AC39;">企业</span></div>
+    <div class="shebao-nav">企业定制服务 <span class="circle-3">企业</span></div>
         <div class="entry-Calculator qiye_box fl">
             <div class="clearfix">
                 <div class="qiye_btn active">企业社保</div>
@@ -662,7 +679,12 @@
     <div class="news_module">
         <div class="news_left fl">
             <div class="news_l_title">人人保</div>
-            <div class="news_video"></div>
+            <div class="news_video">
+                <video  class="video-box"  controls="controls" />
+                    <source src="Video/bainain.mp4" type="video/mp4">
+                    <embed src="Video/bainain.mp4">
+                 </video>
+            </div>
         </div>
         <div class="news_right fl">
             <div class="new_title">
