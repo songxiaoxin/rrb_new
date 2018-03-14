@@ -13,7 +13,7 @@ button,input[type=button],input[type=reset],input[type=submit]{cursor:pointer;-w
 .fl{float:left;overflow: hidden;}
 .fr{float:right}
 select{height:26px; line-height:26px; padding:2px 0}
-body{background:#fff}
+body{background:#fff;min-width: 1200px;}
 body,button,input,select,textarea{font:12px/1.5 arial,helvetica,clean,sans-serif;}
 body{/* overflow-x: hidden; */min-width: 1200px;height: 1000px;}
 a{text-decoration:none;color:#333; -webkit-transition: color 0.2s linear;
