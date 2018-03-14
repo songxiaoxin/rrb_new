@@ -1287,11 +1287,29 @@ display: none;
 /*****************************缴社保********************************/
 .jsb_banner{
     text-align: center;
+    background: #374362;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #1FD79B), color-stop(100%, #1A97C7));
+    background: -webkit-linear-gradient(-45deg, #1FD79B 0%, #1A97C7 100%);
+    background: -webkit-linear-gradient(315deg, #1FD79B 0%, #1A97C7 100%);
+    background: linear-gradient(135deg, #1FD79B 0%, #1A97C7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1FD79B ', endColorstr='#1A97C7',GradientType=1 );
+}
+.banner_box{
+    height: 100%;
+    z-index: 100;
+    position: relative;
 }
 .jsb_banner .banner_fontsize1{
     font-size: 46px;
     color: white;
-    margin-top: 135px;
+    padding-top: 135px;
+}
+.banner_animal{
+    position: absolute;
+    height: 500px;
+    width: 1200px;
+    top: 0;
+    z-index: -1;
 }
 .banner_fontsize1 span{
     font-size: 62px;
@@ -1315,6 +1333,9 @@ display: none;
     border-radius: 20px;
 }
 /*content*/
+.jsb_why_box_l ul{
+    overflow: hidden;
+}
 .jiaoshebao_box{
     background: #F7F7F7;
 }
@@ -1329,16 +1350,17 @@ display: none;
     font-size: 48px;
     color: #02214c;
     margin-top: 110px;
+    font-weight: 100;
     margin-bottom: 100px;
 }
 .jsb_why_box_l{
-    width: 60%;
+    width: 750px;
     float: left;
     overflow: hidden;
     padding-bottom: 100px;
 }
 .jsb_why_box_r{
-    width: 40%;
+    width:450px;
     float: right;
     overflow: hidden;
 }
@@ -1355,6 +1377,46 @@ display: none;
     margin-right: 18px;
     float: left;
     border: 1px solid #e1e1e1;
+    background: url("../images/jsb_icon1.png") no-repeat;
+}
+.jsb_icon2{
+    background-position: -78px 0;
+}
+.jsb_icon3{
+    background-position: -156px 0;
+}
+.jsb_icon4{
+    background-position: -234px 0;
+}
+.jsb_icon5{
+    background-position: -312px 0;
+}
+.jsb_icon6{
+    background-position: -390px 0;
+}
+.jsb_icon7{
+    background-position: -468px 0;
+}
+.jsb_icon8{
+    background-position: -545px 0;
+}
+.jsb_icon9{
+    background-position:  0 -78px;
+}
+.jsb_icon10{
+    background-position:  -78px -78px;
+}
+.jsb_icon11{
+    background-position: -156px -78px;
+}
+.jsb_icon12{
+    background-position:  -234px -78px;
+}
+.jsb_icon13{
+    background-position: -312px -78px;
+}
+.jsb_icon14{
+    background-position: -390px -78px;
 }
 .jsb_icon_r{
     text-align: left;
@@ -1370,9 +1432,16 @@ display: none;
 .jsb_icon_r span{
     font-size: 22px;
     color: #282828;
+    display: inline-block;
+    width: 138px;
 }
-.sjb_liucheng ul{
+
+.sjb_liucheng .liucheng_box{
     overflow: hidden;
+    display: none;
+}
+.sjb_liucheng .show{
+    display: block;
 }
 .sjb_liucheng ul li{
     width: 14.2%;
@@ -1383,13 +1452,47 @@ display: none;
     height: 73px;
     margin: 0 auto;
     background: red;
+    background:url("../images/jsb_icon.png") no-repeat;
+}
+.jsb_lc_icon_1{
+    background-position: -18px -119px;
+}
+.jsb_lc_icon_2{
+    background-position: -82px -119px;
+}
+.jsb_lc_icon_3{
+    background-position: -146px -119px;
+}
+.jsb_lc_icon_4{
+    background-position: -210px -119px;
 }
 .jsb_lc_circle{
     width: 144px;
     height: 144px;
+    overflow: hidden;
     border-radius: 50%;
     background: white;
     margin: 35px auto;
+
+}
+.jsb_lc_circle_pub{
+    width: 80px;
+    height: 80px;
+    margin: 32px auto;
+    background:url("../images/jsb_icon.png") no-repeat;
+}
+.jsb_lc_circle_1{
+    background-position: -10px -219px;
+}
+.jsb_lc_circle_2{
+    background-position: -83px -219px;
+}
+.jsb_lc_circle_3{
+    width: 60px;
+    background-position: -157px -220px;
+}
+.jsb_lc_circle_4{
+    background-position: -219px -213px;
 }
 .sjb_liucheng ul li span{
     font-size: 18px;
@@ -1398,7 +1501,7 @@ display: none;
 
 .buy_1, .free-btn_1 {
     width: 260px;
-    height: 55px;
+    height: 52px;
     font-size: 18px;
     text-align: center;
     border-radius: 27px;
@@ -1416,7 +1519,9 @@ display: none;
 .icon_box .icon11 {
     margin: 100px 0;
 }
-
+.margin_t142{
+    margin-top: 142px;
+}
 
 
 
