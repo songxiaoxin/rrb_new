@@ -102,4 +102,26 @@ $(function () {
     });
 
 
+    //**********************************************************登录界面************************
+    //个人企业切换操作
+    // $(function(){
+    //     var n=$(".login_r .login_top .change").index()
+    //     $(".login_r .login_top .login_tit").mouseenter(
+    //         function(){
+    //             var z=$(this).index()+1;
+    //             $(".login_top i").stop().animate({left:(z*30)},300)
+    //             $(this).addClass("change")
+    //             $(this).siblings().removeClass("change")
+    //         }
+    //     )
+    //     $(".login_r .login_top").mouseleave(
+    //         function(){
+    //             $(".login_r .login_top .login_tit").eq(n).addClass("change")
+    //             $(".login_r .login_top .login_tit").eq(n).siblings().removeClass("change")
+    //             $(".login_top i").stop().animate({left:30},300)
+    //         }
+    //     )
+    // })
+
+
 })
