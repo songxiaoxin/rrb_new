@@ -1779,8 +1779,15 @@ display: none;
 }
 .login_item{
     overflow: hidden;
-
-    margin-bottom: 22px;
+    /* margin-bottom: 22px; */
+}
+.propmt{
+    height: 22px;
+    text-align: left;
+    visibility: visible;
+}
+.propmt span{
+    color: red;
 }
 .login_item input{
     width: 293px;
@@ -2544,6 +2551,13 @@ display: none;
 }
 
 /********************************企业服务********************************************/
+.qiye_banner{
+
+    background: url("../images/qiye_banner.png") no-repeat;
+}
+.qiye_banner .banner_fontsize1 {
+    color: #73AD94;
+}
 .qiyefuwu_box ul{
     overflow: hidden;
 }
@@ -2559,8 +2573,20 @@ display: none;
 .qiyefuwu_box ul .qy_secend_li{
     text-align: right;
 }
+.qiyefuwu_box ul li .img_out{
+    height: 200px;
+}
 .qiyefuwu_box ul li img{
     margin-bottom: 15px;
+    /*height: 220px;*/
+    /*width: 258px;*/
+}
+.qiyefuwu_box ul li h2{
+    display: inline-block;
+    width: 200px;
+}
+.qiyefuwu_box ul  .qy_secend_li h2{
+    text-align: left;
 }
 .qiyefuwu_box ul li span{
     display: inline-block;
@@ -2568,7 +2594,176 @@ display: none;
     font-size: 14px;
     line-height: 28px;
     color: #969696;
+    text-align: left;
 }
+.qy_sever_youshi ul{
+    overflow: hidden;
+}
+
+.qy_sever_youshi ul li{
+    position: relative;
+    width: 250px;
+    float: left;
+    margin-bottom:135px;
+    z-index: 1;
+   padding: 68px 25px 25px;
+}
+.qy_sever_youshi ul li img{
+    z-index: 5;
+    position: relative;
+}
+.qy_sever_youshi ul li span{
+    display: inline-block;
+    width: 200px;
+    font-size: 15px;
+    text-align: left;
+    color:#969696;
+}
+.secer_border_out{
+    border: 1px solid #CCCCCC;
+    width: 250px;
+    height: 180px;
+    top:118px;
+    z-index: 0;
+    position: absolute;
+}
+
+.buy_qy{
+    display: inline-block;
+    width: 260px;
+    height: 52px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 27px;
+    border: 1px solid #CCCCCC;
+    line-height: 52px;
+    background: #FFDD00;
+    margin: 15px 10px 30px;
+}
+/************************提交订单1页面************************/
+.out_bank{
+    background: #F7F7F7;
+    padding-top: 58px;
+}
+.input_box{
+    height: 1000px;
+    padding: 30px 0;
+    background: white;
+}
+.liucheng_Box{
+    position: relative;
+    height: 100px;
+}
+.Bar {
+    width: 850px;
+    height: 4px;
+    background-color: #999999;
+    position: absolute;
+    top: 23px;
+    left: 175px;
+    z-index: 0;
+}
+.Bar div {
+    display: block;
+    background: #23C36B;
+    color: #333333;
+    height: 8px;
+    position: absolute;
+    top:-2px;
+    border-radius: 4px;
+}
+.Bar div span {
+    position: absolute;
+    width: 550px;
+    text-align: center;
+    font-weight: bold;
+}
+.liucheng{
+    overflow: hidden;
+}
+.liucheng .liucheng_text{
+    width: 25%;
+    text-align: center;
+    float: left;
+    z-index: 10;
+    position: relative;
+}
+.liucheng_text .green1{
+    display: block;
+    margin-top: 14px;
+}
+.liucheng1{
+    width: 51px;
+    height: 51px;
+    margin: 0 auto;
+    line-height: 51px;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 14px;
+    background: url("../images/steep2@2x.png") no-repeat;
+}
+.liucheng2{
+    background: url("../images/steep1@2x.png") no-repeat;
+}
+
+.canbao_Nex {
+    width: 950px;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 10px rgba(220, 220, 220, .8);
+    -webkit-box-shadow: 0 0 10px rgba(220, 220, 220, .8);
+    -moz-box-shadow: 0 0 10px rgba(224, 224, 224, .8);
+    box-shadow: 0 0 10px rgba(224, 224, 224, .8);
+    background-color: white;
+    position: relative;
+    min-height: 500px;
+    margin: 0 auto;
+}
+.canbao_Nex .canbao_title1 {
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #23C36B;
+}
+.mobal * {
+    float: left;
+    line-height: 40px;
+}
+.mobal {
+    font-size: 16px;
+    overflow: hidden;
+    clear: both;
+    line-height: 47px;
+    margin-bottom: 10px;
+}
+.canbao_text {
+    width: 115px;
+    font-size: 14px;
+    text-align: right;
+}
+.mobal .Input {
+    margin-right: 20px;
+    width: 240px;
+    border: 1px solid #DBDBDB;
+    line-height: 36px;
+    height: 36px;
+    font-size:14px;
+    border-radius: 3px;
+    text-indent: 0.5em;
+}
+.mobal input[type=text]:focus{
+    border: 1px solid #56AEFF;
+}
+
+
+
+
+
+
+
+
+
 
 
 
