@@ -2710,11 +2710,11 @@ display: none;
 .canbao_Nex {
     width: 950px;
     padding: 10px;
-    border: 1px solid #CCCCCC;
-    box-shadow: 0 0 10px rgba(220, 220, 220, .8);
-    -webkit-box-shadow: 0 0 10px rgba(220, 220, 220, .8);
+    /* border: 1px solid #CCCCCC; */
+    /* box-shadow: 0 0 10px rgba(220, 220, 220, .8); */
+    /* -webkit-box-shadow: 0 0 10px rgba(220, 220, 220, .8); */
     -moz-box-shadow: 0 0 10px rgba(224, 224, 224, .8);
-    box-shadow: 0 0 10px rgba(224, 224, 224, .8);
+    /* box-shadow: 0 0 10px rgba(224, 224, 224, .8); */
     background-color: white;
     position: relative;
     min-height: 500px;
@@ -2737,35 +2737,91 @@ display: none;
     line-height: 47px;
     margin-bottom: 10px;
 }
+.mobal_1{
+    width: 49%;
+    float: left;
+}
 .canbao_text {
     width: 115px;
     font-size: 14px;
     text-align: right;
 }
+
 .mobal .Input {
     margin-right: 20px;
     width: 240px;
     border: 1px solid #DBDBDB;
-    line-height: 36px;
-    height: 36px;
+    line-height: 34px;
+    height: 34px;
     font-size:14px;
-    border-radius: 3px;
+    box-sizing: border-box;
+    border-radius: 5px;
     text-indent: 0.5em;
 }
 .mobal input[type=text]:focus{
     border: 1px solid #56AEFF;
 }
-
-
-
-
-
-
-
-
-
-
-
+.regex_box {
+    height: 40px;
+    width: 200px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 12px;
+    color: red;
+}
+.regex_box img{
+    width: 16px;
+    height: 16px;
+    margin-top: 11px;
+    display: table;
+    vertical-align: middle;
+}
+.regex_box  span{
+    margin-left: 5px;
+}
+.mobal .liucheng_city{
+    width: 110px;
+}
+.mobal .liucheng_a{
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    padding: 11px 20px;
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.mobal .liucheng_a:hover{
+    background: #22c36a;
+    color: white;
+}
+.xuanzhong{
+    background: #22c36a;
+    color: white;
+}
+.mobal .Input_jishu{
+    width: 80px;
+    text-align: center;
+}
+.feiyong_box{
+    background: #dedddd;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+.feiyong_box span{
+    color: #333333;
+    font-weight: bold;
+}
+.youhui_box{
+    font-size: 12px;
+    color: #CCCCCC;
+}
+.feiyong_box .zongjia{
+    font-size: 20px;
+    color: red;
+}
 
 
 
