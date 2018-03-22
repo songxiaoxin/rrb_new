@@ -92,7 +92,7 @@
 .uc:hover .uc-app {
     display: block;
     padding: 11px 0;
-    z-index: 1000000000000;
+    z-index: 100000;
 }
 .uc-app i {
     position: absolute;
@@ -2646,7 +2646,6 @@ display: none;
     padding-top: 58px;
 }
 .input_box{
-    height: 1000px;
     padding: 30px 0;
     background: white;
 }
@@ -2733,7 +2732,6 @@ display: none;
 .mobal {
     font-size: 16px;
     overflow: hidden;
-    clear: both;
     line-height: 47px;
     margin-bottom: 10px;
 }
@@ -2822,19 +2820,81 @@ display: none;
     font-size: 20px;
     color: red;
 }
+.liucheng_next{
+    text-align: center;
+    font-size: 14px;
+}
+/*************************确认订单******************/
+.canbao_Nex_1{
+    padding: 34px;
+    border: 1px solid #E5E5E5;
+}
+.geren_message{
+    overflow: hidden;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #EEEEEE;
+    width: 100%;
+}
+.mobal_3{
+    width: 33.3%;
+    float: left;
+    overflow: hidden;
+}
+.mobal_3 .canbao_text{
+    width: 80px;
+    text-align: left;
+    padding-left: 20px;
+}
+.mobal_3 span{
+    color: #636363;
+    font-size: 14px;
+}
 
+.jiaofei_mingxi .heji_month{
+    font-size: 14px;
+    margin-left: 10px;
+    color: #52ACFF;
+}
+.table_box{
+    width: 100%;
+    overflow-x: auto;
+}
 
+.ddxq_biaoge{
+    font-size: 12px;
+    border: 1px solid #c6c6c6;
+    width: 1400px;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+.ddxq_biaoge td{
+    display: table-cell;
+    padding: 5px;
+    border: 1px solid #c6c6c6;
+}
 
-
-
-
-
-
-
-
-
-
-
+.youhui_out_box ul{
+    height:40px;
+    background: #F7F7F7;
+    width: 100%;
+}
+.youhui_out_box ul li{
+    float: left;
+    width: 106px;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 38px;
+    height: 38px;
+    text-align: center;
+}
+.youhui_out_box ul .change{
+    color: #23C36B;
+    border-bottom: 2px solid #23c36b;
+}
+.youbui_1{
+    font-size: 14px;
+    padding: 20px 10px;
+}
 
 
 

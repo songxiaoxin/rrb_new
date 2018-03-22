@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>提交订单</title>
+    <title>确认订单</title>
     <meta name="description" content="人人保是第一家24小时在线社保代缴平台,上市企业,服务于世界500强客户,16年专注为中小微企业、自由职业者及个体工商户提供社保网上自助代缴服务,包括全国社保代理,社保代缴,社保补缴,代缴公积金,社保挂靠,社保转移,五险一金代办等,上人人保，彻底拒绝社保中断!">
     <link rel="stylesheet" href="css/swiper-4.1.0.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -60,19 +60,19 @@
             <div class="liucheng_Box">
                 <!--进度条-->
                 <div class="Bar">
-                    <div style="width: 15%;">
+                    <div style="width: 50%;">
                         <span></span>
                     </div>
                 </div>
                 <!--END-->
                 <div class="liucheng">
-                    <div class="liucheng_text">
+                    <div class="liucheng_text ">
                         <p class="liucheng1 liucheng2">1</p>
                         <p class=" green1 green">提交订单</p>
                     </div>
                     <div class="liucheng_text">
-                        <p class="liucheng1 ">2</p>
-                        <p class="green1  ">订单确认</p>
+                        <p class="liucheng1 liucheng2">2</p>
+                        <p class="green1  green">订单确认</p>
                     </div>
                     <div class="liucheng_text">
                         <p class="liucheng1">3</p>
@@ -85,79 +85,200 @@
                 </div>
             </div>
             <div class="canbao_Nex">
-                <h4 class="canbao_title1">个人基本信息</h4>
-                <div class="mobal ">
-                    <p class="canbao_text">姓名：</p>
-                    <input class="Input" type="text" id="" placeholder="姓名" value="">
-                    <div class="regex_box">
-                        <img src="images/right.png" alt="">
+                <h4 class="canbao_title1">请核对订单信息</h4>
+                <div class="canbao_Nex_1">
+                    <h4 class="canbao_title1">个人信息</h4>
+                    <div class="geren_message">
+                        <div class="mobal mobal_3">
+                            <p class="canbao_text">姓名：</p>
+                            <span>张三啊</span>
+                        </div>
+                        <div class="mobal mobal_3">
+                            <p class="canbao_text">手机号：</p>
+                            <span>13111111111</span>
+                        </div>
+
+                        <div class="mobal mobal_3">
+                            <p class="canbao_text">身份证号：</p>
+                            <span>142703111214521121</span>
+                        </div>
                     </div>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">手机号：</p>
-                    <input class="Input" type="text" id="" placeholder="请输入手机号" value="">
-                    <div class="regex_box">
-                        <img src="images/wrong.png" alt="">
-                        <span>身份证不能为空</span>
+                    <h4 class="canbao_title1">服务项目</h4>
+                    <div class="geren_message">
+                        <div class="mobal mobal_3">
+                            <p class="canbao_text">参保项目：</p>
+                            <span>缴纳社保</span>
+                        </div>
+                        <div class="mobal mobal_3">
+                            <p class="canbao_text">参保城市：</p>
+                            <span>北京-朝阳区</span>
+                        </div>
+
+                        <div class="mobal mobal_3">
+                            <p class="canbao_text">人员类别：</p>
+                            <span>本城镇职工</span>
+                        </div>
+                        <div class="mobal mobal_3">
+                            <p class="canbao_text">参保类型：</p>
+                            <span>续缴</span>
+                        </div>
+                        <div class="mobal mobal_3">
+                            <p class="canbao_text">套餐类型：</p>
+                            <span>年套餐</span>
+                        </div>
+
+                        <div class="mobal mobal_3">
+                            <p class="canbao_text">社保基数：</p>
+                            <span>3082</span>
+                        </div>
+                    </div>
+                    <h4 class="canbao_title1">缴费明细</h4>
+                    <div class="geren_message jiaofei_mingxi">
+                        <div class="mobal">
+                            <div class="jiaofei_month">2018-02-28至2018-05-28</div><span class="heji_month">(合计：3个月)</span>
+                        </div>
+                        <div class="table_box">
+                            <table width="100%" border="1" cellspacing="0" cellpadding="0"  style="" bgcolor="#FFFFFF" class="ddxq_biaoge">
+                                <tbody>
+                                <tr bgcolor="#fafafa">
+                                    <td height="40" rowspan="2" align="center">序号</td>
+                                    <td rowspan="2" align="center">月份</td>
+                                    <td colspan="3" align="center">养老</td>
+                                    <td colspan="3" align="center">失业</td>
+                                    <td colspan="3" align="center">工伤</td>
+                                    <td colspan="3" align="center">医疗</td>
+                                    <td colspan="3" align="center">生育</td>
+                                    <td align="center" bgcolor="#e4e9ef">其他费用</td>
+                                    <td colspan="3" align="center" bgcolor="#e4e9ef">金额</td>
+                                </tr>
+                                <tr bgcolor="#fafafa">
+                                    <td align="center">基数</td>
+                                    <td align="center">企业(19%)</td>
+                                    <td align="center">个人(8%)</td>
+                                    <td align="center">基数</td>
+                                    <td align="center">企业(1.2%)</td>
+                                    <td align="center">个人(0.3%)</td>
+                                    <td align="center">基数</td>
+                                    <td align="center">企业(1%)</td>
+                                    <td align="center">个人(0%)</td>
+                                    <td align="center">基数</td>
+                                    <td align="center">企业(6%)+60</td>
+                                    <td align="center">个人(2%)+60</td>
+                                    <td align="center">基数</td>
+                                    <td align="center">企业(1%)</td>
+                                    <td align="center">个人(0%)</td>
+                                    <td align="center"></td>
+                                    <td align="center" bgcolor="#e4e9ef">企业</td>
+                                    <td align="center" bgcolor="#e4e9ef">个人</td>
+                                    <td align="center" bgcolor="#e4e9ef">合计</td>
+                                </tr>
+
+                                <tr>
+                                    <td height="20" align="center">1</td>
+                                    <td align="center">2018-05 </td>
+                                    <td align="center">2318</td>
+                                    <td align="center">440.42  </td>
+                                    <td align="center">185.44   </td>
+                                    <td align="center">2318</td>
+                                    <td align="center">27.82    </td>
+                                    <td align="center">6.95   </td>
+                                    <td align="center">2318</td>
+                                    <td align="center">23.18   </td>
+                                    <td align="center">0    </td>
+                                    <td align="center">2318</td>
+                                    <td align="center">199.08  </td>
+                                    <td align="center">106.36    </td>
+                                    <td align="center">2318</td>
+                                    <td align="center">23.18     </td>
+                                    <td align="center">0         </td>
+                                    <td align="center"></td>
+                                    <td align="center" bgcolor="#e4e9ef">713.68                </td>
+                                    <td align="center" bgcolor="#e4e9ef">298.75                </td>
+                                    <td align="center" bgcolor="#e4e9ef">1012.43                </td>
+                                </tr>
+                                <tr>
+                                    <td height="20" align="center">2</td>
+                                    <td align="center">2018-06    </td>
+
+                                    <td align="center">2318</td>
+                                    <td align="center">440.42                   </td>
+                                    <td align="center">185.44                                            </td>
+                                    <td align="center">2318</td>
+                                    <td align="center">27.82                                            </td>
+                                    <td align="center">6.95                                            </td>
+                                    <td align="center">2318</td>
+                                    <td align="center">23.18                                            </td>
+                                    <td align="center">0                                            </td>
+                                    <td align="center">2318</td>
+                                    <td align="center">139.08                                            </td>
+                                    <td align="center">46.36                                            </td>
+                                    <td align="center">2318</td>
+                                    <td align="center">23.18                                            </td>
+                                    <td align="center">0                                            </td>
+                                    <td align="center"></td>
+                                    <td align="center" bgcolor="#e4e9ef">653.68                </td>
+                                    <td align="center" bgcolor="#e4e9ef">238.75                </td>
+                                    <td align="center" bgcolor="#e4e9ef">892.43                </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td height="20" align="center">6</td>
+                                    <td align="center">
+                                        2018-10                </td>
+
+                                    <td align="center">2735</td>
+                                    <td align="center">
+                                        519.65                                            </td>
+                                    <td align="center">
+                                        218.8                                            </td>                    <td align="center">2735</td>
+                                    <td align="center">
+                                        32.82                                            </td>
+                                    <td align="center">
+                                        8.21                                            </td>                    <td align="center">2735</td>
+                                    <td align="center">
+                                        27.35                                            </td>
+                                    <td align="center">
+                                        0                                            </td>                    <td align="center">2735</td>
+                                    <td align="center">
+                                        164.1                                            </td>
+                                    <td align="center">
+                                        54.7                                            </td>                    <td align="center">2735</td>
+                                    <td align="center">
+                                        27.35                                            </td>
+                                    <td align="center">
+                                        0                                            </td>                <td align="center">
+                                </td>
+
+
+
+
+                                    <td align="center" bgcolor="#e4e9ef">
+                                        771.27                </td>
+                                    <td align="center" bgcolor="#e4e9ef">
+                                        281.71                </td>
+                                    <td align="center" bgcolor="#e4e9ef">
+                                        1052.98                </td>
+
+                                </tr>
+
+                                </tbody></table>
+                        </div>
+
+                    </div>
+                    <h4 class="canbao_title1">使用优惠</h4>
+                    <div class="youhui_out_box">
+                        <ul>
+                            <li class="change">余额</li>
+                            <li>优惠券</li>
+                        </ul>
+                        <div class="youbui_1">
+                            <input type="checkbox" id="money"><label for="money">使用余额</label>&nbsp; &nbsp;&nbsp;&nbsp;(账户余额：<span style="color: red;">1600.00</span>元)
+                        </div>
+                        
                     </div>
                 </div>
 
-                <div class="mobal ">
-                    <p class="canbao_text">身份证号：</p>
-                    <input class="Input" type="text" id="" placeholder="中国大陆身份证" value="">
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">&nbsp;</p>
-                    <span style="color: #3fa3ff;font-size: 12px;">温馨提示：首次在人人保购买服务，系统会自动为您绑定姓名及身份证号信息。</span>
-                </div>
-                <h4 class="canbao_title1">参保信息</h4>
-                <div class="mobal" style="margin-top: 10px">
-                    <p class="canbao_text">参保城市：</p>
-                    <select name="ddlPrivece" id="" class="Input liucheng_city" >
-                        <option value="">请选择</option>
-                     </select>
-                    <select name="ddlCity" id="" class="Input liucheng_city" >
-                        <option value="">请选择</option>
-                    </select>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">人员类别：</p>
-                    <a href="javascript:;" class="liucheng_a xuanzhong">不区分人员分类</a>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">参保类型：</p>
-                    <a href="javascript:;" class="liucheng_a ">续缴</a>
-                    <a href="javascript:;" class="liucheng_a ">新参</a>
-                    <a href="javascript:;" class="liucheng_a xuanzhong">补缴</a>
-                </div>
-                <h4 class="canbao_title1">套餐类型</h4>
-                <div class="mobal ">
-                    <p class="canbao_text">参保项目：</p>
-                    <a href="javascript:;" class="liucheng_a xuanzhong">缴纳社保</a>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">套餐选择：</p>
-                    <a href="javascript:;" class="liucheng_a xuanzhong">月套餐</a>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">开始月份：</p>
-                    <select name="ddlPrivece" id="" class="Input liucheng_city" >
-                        <option value="">2018-05</option>
-                    </select>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">缴纳时长：</p>
-                    <select name="ddlPrivece" id="" class="Input liucheng_city" >
-                        <option value="">1个月</option>
-                    </select>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">社保基数：</p>
-                    <input class="Input Input_jishu" type="text" id="" placeholder="" value="3065">
-                    <div class="regex_box">
-                        <span style="color: #3fa3ff">温馨提示：基数范围：3065~23118元</span>
-                    </div>
-                </div>
                 <div class="feiyong_box">
                     <div class="mobal ">
                         <p class="canbao_text">缴纳费用：</p>
