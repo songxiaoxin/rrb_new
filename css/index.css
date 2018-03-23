@@ -1617,7 +1617,7 @@ display: none;
 }
 /*******************************************增值服务****************************************************/
 .zzfw-banner{
-    background: red;
+    background: url("../images/zengzhi-banner.png") no-repeat;
     text-align: center;
 }
 .zzfw-banner .banner_fontsize1{
@@ -1650,11 +1650,17 @@ display: none;
 }
 .zzfw-content-box .zzfw-ul .zzfw-li .zzfw-left{
     float: left;
-    background: black;
+    background: url("../images/shebao-server.png") no-repeat;
     height: 100%;
     width:360px;
     text-align: center;
     color: white;
+}
+.zzfw-content-box .zzfw-ul .zzfw-li .zzfw-left1{
+    background: url("../images/gongjijin-server.png") no-repeat;
+}
+.zzfw-content-box .zzfw-ul .zzfw-li .zzfw-left2{
+    background: url("../images/renshi-server.png") no-repeat;
 }
 .zzfw-left span{
     font-size: 36px;
@@ -1671,7 +1677,6 @@ display: none;
     position: relative;
     float: left;
     padding: 32px 16px 20px 26px;
-    background: blue;
 }
 .zzfw-r-title{
     font-size: 18px;
@@ -1702,7 +1707,6 @@ display: none;
     display: inline-block;
     width: 162px;
     height: 42px;
-    color: white;
     border-radius: 3px;
     line-height: 42px;
     margin-right: 15px;
@@ -1711,6 +1715,7 @@ display: none;
     border: 1px solid #cccccc;
 }
 .zzfw-btn .show{
+    color: white;
     border: none;
     background-image: url(../images/bg_btn.png);
 }
