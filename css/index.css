@@ -539,7 +539,7 @@ display: none;
 /*数据展示模块*/
 .module1{
     height: 390px;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 .icon_box{
     overflow: hidden;
@@ -2838,6 +2838,11 @@ display: none;
     padding: 34px;
     border: 1px solid #E5E5E5;
 }
+.packup_icon{
+    float: left;
+    cursor: pointer;
+    margin: 14px 6px;
+}
 .geren_message{
     overflow: hidden;
     padding-bottom: 30px;
@@ -2881,13 +2886,17 @@ display: none;
     padding: 5px;
     border: 1px solid #c6c6c6;
 }
-
-.youhui_out_box ul{
+/*.youhui_out_box{*/
+    /*width: 100%;*/
+    /*float: left;*/
+/*}*/
+.youhui_out_box .youhui_nav_ul{
     height:40px;
     background: #F7F7F7;
     width: 100%;
+    overflow: hidden;
 }
-.youhui_out_box ul li{
+.youhui_out_box .youhui_nav_ul li{
     float: left;
     width: 106px;
     font-size: 14px;
@@ -2925,6 +2934,149 @@ display: none;
     padding-right: 20px;
     text-align: right;
 }
+.youbui_1 .daijinjuan{
+    overflow: hidden;
+}
+.youbui_1 .daijinjuan li{
+    width: 25%;
+    float: left;
+    margin-bottom: 20px;
+}
+.djj_box{
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    border: 1px solid #D4D4D4;
+}
+.djj_box .djj_top{
+    height: 75px;
+    /* width: 178px; */
+    font-size: 12px;
+    background: #56D5AC;
+    color: white;
+}
+.djj_box .djj_no{
+    cursor: no-drop;
+    background: #BFBFBF;
+}
+.djj_top .djj_money{
+    font-size: 26px;
+    display: inline-block;
+    margin: 10px 5px 0px 10px;
+    font-weight: bold;
+}
+.djj_bottom{
+    color: #585858;
+    padding: 5px 10px 0;
+    font-size: 12px;
+}
+
+.youbui_1 .daijinjuan li .select{
+    border: none;
+    background: url("../images/choose_icon.png") no-repeat;
+    background-size: 180px;
+}
+.youbui_1 .daijinjuan li .select .djj_top{
+    margin: 1px;
+}
+
+/****************************************支付订单*******************************************************/
+.zf_box{
+    line-height: 25px;
+    font-size: 13px;
+}
+.zf_jine{
+    margin: 20px 0;
+    padding: 20px 30px;
+    background: #56D5AC;
+    font-size: 22px;
+    color: white;
+}
+
+.zf_card ul {
+    overflow: hidden;
+}
+.zf_card ul li{
+    float: left;
+    background: url("../images/bank_bg@2x.png") no-repeat;
+    width: 176px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    display: table-cell;
+    margin-right: 13px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.zf_card ul li.select{
+    background: url("../images/alipay_bg@2x.png") no-repeat;
+}
+.zf_card ul li img{
+    vertical-align: middle;
+}
+
+/****************************订单完成************************/
+.dd_success_box{
+    padding: 50px 0 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+}
+.success_span{
+    font-size: 28px;
+    font-weight: bold;
+    color: #23c36b;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.success_span img{
+    display:inline-block;
+    vertical-align: middle;
+}
+.red{
+    color: red;
+}
+.time_set{
+    color: #3FA2FD;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

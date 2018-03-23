@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>提交订单</title>
+    <title>支付订单</title>
     <meta name="description" content="人人保是第一家24小时在线社保代缴平台,上市企业,服务于世界500强客户,16年专注为中小微企业、自由职业者及个体工商户提供社保网上自助代缴服务,包括全国社保代理,社保代缴,社保补缴,代缴公积金,社保挂靠,社保转移,五险一金代办等,上人人保，彻底拒绝社保中断!">
     <link rel="stylesheet" href="css/swiper-4.1.0.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -60,22 +60,22 @@
             <div class="liucheng_Box">
                 <!--进度条-->
                 <div class="Bar">
-                    <div style="width: 15%;">
+                    <div style="width: 85%;">
                         <span></span>
                     </div>
                 </div>
                 <!--END-->
                 <div class="liucheng">
-                    <div class="liucheng_text">
+                    <div class="liucheng_text ">
                         <p class="liucheng1 liucheng2">1</p>
                         <p class=" green1 green">提交订单</p>
                     </div>
                     <div class="liucheng_text">
-                        <p class="liucheng1 ">2</p>
-                        <p class="green1  ">订单确认</p>
+                        <p class="liucheng1 liucheng2">2</p>
+                        <p class="green1  green">订单确认</p>
                     </div>
                     <div class="liucheng_text">
-                        <p class="liucheng1">3</p>
+                        <p class="liucheng1 liucheng2">3</p>
                         <p class="green1">支付订单</p>
                     </div>
                     <div class="liucheng_text">
@@ -85,117 +85,59 @@
                 </div>
             </div>
             <div class="canbao_Nex">
-                <h4 class="canbao_title1">个人基本信息</h4>
-                <div class="mobal ">
-                    <p class="canbao_text">姓名：</p>
-                    <input class="Input" type="text" id="" placeholder="姓名" value="">
-                    <div class="regex_box">
-                        <img src="images/right.png" alt="">
+                <h4 class="canbao_title1">支付订单</h4>
+                <div class="zf_box">
+                    <div>订单提交成功，请尽快付款！订单号 <span>71619419815</span></div>
+                    <div>请您在 <span style="color: red;">12小时</span>内完成支付，否则订单会被自动取消（因订单未及时支付导致无法办理当月服务，造成后果由买方自负）</div>
+                    <div class="zf_jine">
+                        <img src="images/" alt="">
+                        需支付金额：<span>1672.66</span>元 （已为您节省1680.00元）
                     </div>
                 </div>
-                <div class="mobal ">
-                    <p class="canbao_text">手机号：</p>
-                    <input class="Input" type="text" id="" placeholder="请输入手机号" value="">
-                    <div class="regex_box">
-                        <img src="images/wrong.png" alt="">
-                        <span>身份证不能为空</span>
+                <div class="geren_message">
+                    <h4 class="canbao_title1">银行卡支付</h4>
+                    <div class="zf_card">
+                        <ul>
+                            <li class="">
+                                <img src="images/bank_icon/中国银行.png" alt="">
+                            </li>
+                            <li class="">
+                                <img src="images/bank_icon/中国银行.png" alt="">
+                            </li>
+                            <li class="">
+                                <img src="images/bank_icon/中国银行.png" alt="">
+                            </li>
+                            <li class="">
+                                <img src="images/bank_icon/中国银行.png" alt="">
+                            </li>
+                            <li class="">
+                                <img src="images/bank_icon/中国银行.png" alt="">
+                            </li>
+                            <li class="">
+                                <img src="images/bank_icon/中国银行.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="geren_message">
+                    <h4 class="canbao_title1">移动支付</h4>
+                    <div class="zf_card">
+                        <ul>
+                            <li class="select">
+                                <img src="images/bank_icon/支付宝.png" alt="">
+                            </li>
+                            <li class="">
+                                <img src="images/bank_icon/微信支付.png" alt="">
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="mobal ">
-                    <p class="canbao_text">身份证号：</p>
-                    <input class="Input" type="text" id="" placeholder="中国大陆身份证" value="">
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">&nbsp;</p>
-                    <span style="color: #3fa3ff;font-size: 12px;">温馨提示：首次在人人保购买服务，系统会自动为您绑定姓名及身份证号信息。</span>
-                </div>
-                <h4 class="canbao_title1">参保信息</h4>
-                <div class="mobal" style="margin-top: 10px">
-                    <p class="canbao_text">参保城市：</p>
-                    <select name="ddlPrivece" id="" class="Input liucheng_city" >
-                        <option value="">请选择</option>
-                     </select>
-                    <select name="ddlCity" id="" class="Input liucheng_city" >
-                        <option value="">请选择</option>
-                    </select>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">人员类别：</p>
-                    <a href="javascript:;" class="liucheng_a xuanzhong">不区分人员分类</a>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">参保类型：</p>
-                    <a href="javascript:;" class="liucheng_a ">续缴</a>
-                    <a href="javascript:;" class="liucheng_a ">新参</a>
-                    <a href="javascript:;" class="liucheng_a xuanzhong">补缴</a>
-                </div>
-                <div class="new_can_box">
-                    <div class="mobal" >
-                        <p class="canbao_text">储蓄卡：</p>
-                        <select name="ddlPrivece" id="" class="Input liucheng_city" >
-                            <option value="">请选择</option>
-                        </select>
-                        <input class="Input" type="text" placeholder="请输入支行名称">
-                    </div>
-                    <div class="mobal" >
-                        <p class="canbao_text">储蓄卡卡号：</p>
-                        <input class="Input" type="text" placeholder="储蓄卡卡号">
-                    </div>
-                </div>
-                <h4 class="canbao_title1">套餐类型</h4>
-                <div class="mobal ">
-                    <p class="canbao_text">参保项目：</p>
-                    <a href="javascript:;" class="liucheng_a xuanzhong">缴纳社保</a>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">套餐选择：</p>
-                    <a href="javascript:;" class="liucheng_a xuanzhong">月套餐</a>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">开始月份：</p>
-                    <select name="ddlPrivece" id="" class="Input liucheng_city" >
-                        <option value="">2018-05</option>
-                    </select>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">缴纳时长：</p>
-                    <select name="ddlPrivece" id="" class="Input liucheng_city" >
-                        <option value="">1个月</option>
-                    </select>
-                </div>
-                <div class="mobal ">
-                    <p class="canbao_text">社保基数：</p>
-                    <input class="Input Input_jishu" type="text" id="" placeholder="" value="3065">
-                    <div class="regex_box">
-                        <span style="color: #3fa3ff">温馨提示：基数范围：3065~23118元</span>
-                    </div>
-                </div>
-                <div class="feiyong_box">
-                    <div class="mobal ">
-                        <p class="canbao_text">缴纳费用：</p>
-                        <span>￥1,191.97</span>
-                    </div>
-                    <div class="mobal ">
-                        <p class="canbao_text">服务费：</p>
-                        <span>￥200.00 </span>
-                        <div class="youhui_box">
-                         <span>&nbsp; &nbsp; &nbsp; &nbsp; </span> <span>已优惠</span> <span style="color: #3fa3ff;">0</span><span>元</span>
-                        </div>
-                    </div>
-                    <div class="mobal ">
-                        <p class="canbao_text">费用合计：</p>
-                        <span class="zongjia">￥1,391.97 </span>
-                    </div>
-                </div>
                 <div class=" liucheng_next">
-                    <div class="" >
-                        <input type="checkbox" id="protocol"> <label for="protocol">阅读并同意</label> <a class="xieyi" href="javascript:;" style="color: #4A86E8;">《人人保网站代理协议》</a>
-
+                    <div style="margin-top: 30px">
+                        <button class="buy ">立即支付</button>
                     </div>
-                    <div style="margin: 30px;">
-                        <button class="buy ">下一步</button>
-                    </div>
+                    <div style="clear: both;"></div>
                 </div>
             </div>
         </div>
