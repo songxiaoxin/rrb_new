@@ -3049,32 +3049,257 @@ display: none;
 }
 
 
+/**************************关于我们------公司介绍**************************/
+.menu-list {
+    height: 24px;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
 
+.menu-list a {
+    font-size: 15px;
+    line-height: 24px;
+    color: #8E8F8E;
+    border-bottom: 2px solid transparent;
+    margin: 0 38px;
+    padding: 6px 0;
+    cursor: pointer;
+    transition: border-bottom-color 314ms linear 0s;
+}
+.menu-list .active, .menu-list a:hover {
+    border-bottom-color: #22AB38;
+    color: #22AB38;
+}
+.jieshao_text{
+    width: 960px;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 60px auto;
+    text-align: center;
+}
+.about-tit {
+    height: 106px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    width: 106px;
+    box-shadow: 10px 10px 3px #B7E0BD;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: #22AB38;
+    line-height: 106px;
+}
+.process-list {
+    width: 351px;
+    position: relative;
+    color: #6E7173;
+}
+.process-list-l {
+    float: left;
+    border-right: 1px solid #22AB38;
+    margin: 0 100px 0 0;
+    padding: 0 66px 50px 132px;
+}
+.process-list-r {
+    float: right;
+    left: -1px;
+    border-left: 1px solid #22AB38;
+    padding: 0 132px 50px 66px;
+}
+.process-list dt{
+    font-weight: 700;
+}
+.process-list dt {
+    font-size: 22px;
+    line-height: 44px;
+    padding: 0 0 0 20px;
+}
+.process-list dd {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px 0 0 20px;
+    color: #85888B;
+}
+.process-list-l dt em, .process-list-l dt:after, .process-list-r dt em, .process-list-r dt:after, .related-link em, .team-info em, .team-list dt em {
+    content: '';
+}
+.process-list dt, .team-position {
+    border-bottom: 1px solid #22AB38;
+}
+.process-list-l dt:after {
+    position: absolute;
+    right: -6px;
+    top: 116px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #22AB38;
+}
+.process-list-r dt:after {
+    position: absolute;
+    left: -5px;
+    top: 116px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #22AB38;
+}
+.process-list-l dt em {
+    position: absolute;
+    left: 513px;
+    top: 33px;
+    width: 1px;
+    height: 96px;
+    background: #22AB38;
+    -webkit-transform: rotate3d(0,0,1,-40deg);
+    -moz-transform: rotate3d(0,0,1,-40deg);
+    -o-transform: rotate3d(0,0,1,-40deg);
+    -ms-transform: rotate3d(0,0,1,-40deg);
+    transform: rotate3d(0,0,1,-40deg);
+}
+.process-list-r dt em {
+    position: absolute;
+    left: 35px;
+    top: 33px;
+    width: 1px;
+    height: 96px;
+    background: #22AB38;
+    -webkit-transform: rotate3d(0,0,1,40deg);
+    -moz-transform: rotate3d(0,0,1,40deg);
+    -o-transform: rotate3d(0,0,1,40deg);
+    -ms-transform: rotate3d(0,0,1,40deg);
+    transform: rotate3d(0,0,1,40deg);
+}
 
+/***************************关于我们----------------公司动态******************************************/
+.gongsidaotai_ul{
+    padding-top: 20px;
+}
+.diquhezuo_box{
+    font-size: 20px;
+    line-height: 40px;
+    color: #747474;
+}
+.diquhezuo_box .title_hezuo{
+    text-align: center;
+    margin: 50px 0;
+}
+.title_hezuo span{
+    font-size: 30px;
+}
+#certify {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto
+}
 
+#certify .swiper-container {
+    padding-bottom: 60px;
+}
 
+#certify  .swiper-slide {
+    width: 220px;
+    height: 356px;
+    background: #22AB38;
+    box-shadow: 0 8px 30px #ddd;
+}
+#certify  .swiper-slide img{
+    display:block;
+    width: 220px;
+}
+#certify  .swiper-slide p {
+    line-height: 37px;
+    border-radius: 3px;
+    padding-top: 0;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    border: 1px solid white;
+    display: block;
+    width: 96px;
+    height: 37px;
+    margin:  0 auto;
+}
 
+#certify .swiper-pagination {
+    width: 100%;
+    bottom: 20px;
+}
 
+#certify .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+    border: 3px solid #fff;
+    background-color: #d5d5d5;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
 
+#certify .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    border: 3px solid #00aadc;
+    background-color: #fff;
+}
 
+#certify .swiper-button-prev {
+    left: 1px;
+    width: 45px;
+    height: 45px;
+    background: url(../images/wm_button_icon.png) no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+}
 
+#certify .swiper-button-prev:hover {
+    background-position: 0 -46px;
+    background-size: 100%
+}
 
+#certify .swiper-button-next {
+    right: 1px;
+    width: 45px;
+    height: 45px;
+    background: url(../images/wm_button_icon.png) no-repeat;
+    background-position: 0 -93px;
+    background-size: 100%;
+}
 
+#certify .swiper-button-next:hover {
+    background-position: 0 -139px;
+    background-size: 100%
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hezuo_box_ul{
+    overflow: hidden;
+}
+.hezuo_box_ul li:first-child{
+    margin-left: 0;
+}
+.hezuo_box_ul li{
+    border-radius: 8px;
+    background: white;
+    float: left;
+    font-size: 13px;
+   margin-left: 10px;
+    width: 290px;
+}
+.hezuo_box_ul li span{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 52px;
+    font-weight: bold;
+    height: 52px;
+    border-bottom: 1px solid #F0F0F0;
+}
+.hezuo_people{
+    padding: 23px 18px;
+}
+.gongsidizhi_ul li{
+    width:570px ;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
 
 
 

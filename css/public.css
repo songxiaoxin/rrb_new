@@ -40,5 +40,15 @@ select::-ms-expand {
     padding-right: 20px;
     background-size: 14px 14px;
 }
-
-
+.clear {
+    zoom: 1;
+}
+.clear:after {
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.block, .clear:after {
+    display: block;
+}
