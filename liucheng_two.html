@@ -281,7 +281,7 @@
                             <li class="change">余额</li>
                             <li>优惠券</li>
                         </ul>
-                        <div class="youbui_1">
+                        <div class="youbui_1 show">
                             <input type="checkbox" id="money"><label for="money">使用余额</label>&nbsp; &nbsp;&nbsp;&nbsp;(账户余额：<span style="color: red;">1600.00</span>元)
                         </div>
                         <div class="youbui_1">
@@ -535,7 +535,20 @@
     $(".ui-dialog-close ,.protocol-button").click(function () {
         $('.ui-dialog').css('display','none')
         $('.ui-mask').css('visibility','hidden')
+    })
 
+    $('.youhui_nav_ul li').click(function () {
+        $('.youhui_nav_ul li').removeClass('change');
+        $(this).addClass('change');
+        var index=$(this).index();
+        var index1=$('.youbui_1');
+        $.each(index1,function (i,e) {
+            if(i==index){
+                $(e).addClass('show')
+            }else{
+                $(e).removeClass('show')
+            }
+        })
     })
 
 </script>

@@ -19,10 +19,14 @@ select{height:26px; line-height:26px; padding:2px 0}
 body{background:#fff;min-width: 1200px;}
 body,button,input,select,textarea{font:12px/1.5 arial,helvetica,clean,sans-serif;}
 body{/* overflow-x: hidden; */position: relative;min-width: 1200px;/* height: 1000px; */}
-a{text-decoration:none;color:#333; -webkit-transition: color 0.2s linear;
+a{
+    text-decoration:none;
+    color:#333;
+    -webkit-transition: color 0.2s linear;
     -moz-transition: color 0.2s linear;
     -o-transition: color 0.2s linear;
-    transition: color 0.2s linear;}
+    transition: color 0.2s linear;
+    }
 a:hover{text-decoration:none;color:#22AB39;}
 
 select::-ms-expand {
