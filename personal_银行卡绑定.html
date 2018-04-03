@@ -5,14 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>余额提现</title>
+    <title>银行卡绑定</title>
     <meta name="description" content="人人保是第一家24小时在线社保代缴平台,上市企业,服务于世界500强客户,16年专注为中小微企业、自由职业者及个体工商户提供社保网上自助代缴服务,包括全国社保代理,社保代缴,社保补缴,代缴公积金,社保挂靠,社保转移,五险一金代办等,上人人保，彻底拒绝社保中断!">
     <link rel="stylesheet" href="css/swiper-4.1.0.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-fileinput.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/index.css">
     <!--<script src="js/jquery-1.10.1.min.js"></script>-->
     <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap-fileinput.js"></script>
     <script type="text/javascript" src="js/Particleground.js"></script>
     <script src="js/index.js"></script>
 
@@ -118,36 +121,18 @@
                 </div>
             </div>
             <div class="personal_right fl">
-                <div class="tixian_span">
+                <div class="tixian_span red" style="margin-bottom: 15px;">
                     <span class="span_tixian">温馨提示：</span>1.只限绑定储蓄卡。<br>
-                 <span  class="span_tixian"></span> 2.银行卡绑定可用可用余额提现，人人保不会以任何形式向您索要支付密码等信息。
+                    <span class="span_tixian"></span> 2.银行卡绑定可用余额提现，人人保不会以任何形式向您索要支付密码等信息。
                 </div>
-                <div class="personal_center">
+                <div class="personal_center personal_center1" >
                     <div class="help_hot_top">
-                        <a href="" class=" change_a black"> 提现</a>
+                        <a href="javascript:;" class="nav_a change_a"> 银行绑定</a>
                     </div>
                     <div class="v-box show">
-                        <div class="item" id="bindMobileDiv">
-										<span class="label">
-											转入余额：
-										</span>
-                            <div class="fl">
-                                <input type="text" class="Input_tixian" value="可用余额" disabled="disabled" style="cursor: no-drop;">
-                            </div>
-                        </div>
-                        <div class="item" id="sendMobileCodeDiv">
-                            <span class="label">可提余额：</span>
-                            <div class="fl">
-
-                                <span class="red font_14">5000.00</span>元
-                                <div class="clr"></div>
-
-                            </div>
-                            <div class="clr"></div>
-                        </div>
                         <div class="item" id="">
-                            <span class="label">提现银行：</span>
-                            <div class="fl" style="width: 700px;">
+                            <span class="label">银行绑定：</span>
+                            <div class="fl tixian_bank_box" style="width: 680px;">
                                 <ul class="bank_card">
                                     <li class="chose">
                                         <div>
@@ -159,8 +144,15 @@
                                         <div class="card_mes">
                                             持卡人：<span>陈博</span>
                                         </div>
+                                        <div class="card_mes card_boot">
+                                            <span class="col_green">默认</span>
+                                            <div class="fr bianji_fr">
+                                                <a href="javascript:;" class="bianji"><img src="images/bianji.png" alt="">修改</a>
+                                                <a href=""><img src="images/delete.png" alt="">删除</a>
+                                            </div>
+                                        </div>
                                     </li>
-                                    <li >
+                                    <li>
                                         <div>
                                             <img src="images/bank_icon/招商银行.png" alt="">
                                         </div>
@@ -170,29 +162,28 @@
                                         <div class="card_mes">
                                             持卡人：<span>陈博</span>
                                         </div>
+                                        <div class="card_mes card_boot">
+
+                                            <a href="javascript:;">设为默认</a>
+                                            <div class="fr bianji_fr">
+                                                <a href="javascript:;" class="bianji"><img src="images/bianji.png" alt="">修改</a>
+                                                <a href=""><img src="images/delete.png" alt="">删除</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="add_card_bg bianji">
+
                                     </li>
                                 </ul>
                                 <div class="clr"></div>
                             </div>
                             <div class="clr"></div>
                         </div>
-                        <div class="item" id="">
-                            <span class="label">提现金额：</span>
-                            <div class="fl" style="font-size: 16px;">
-                                <input type="text" class="Input_tixian" value="6000.00"><span style="display: inline-block;padding: 0 20px 0 12px;">元</span>
-                                <span class="red">提现余额不能大于5000.00元，请重新输入</span>
-                                <div class="clr"></div>
-                            </div>
-                            <div class="clr"></div>
-                        </div>
-                        <div class="item" id="">
-                            <span class="label"></span>
-                            <div class="fl">
-                                <button class="buy change_next "><a href="" style="color: white;">下一步</a></button>
-                            </div>
-                            <div class="clr"></div>
-                        </div>
+
                     </div>
+
+
+
 
                 </div>
             </div>
@@ -200,96 +191,62 @@
     </div>
 </div>
 <!--帮助中心内容页e-->
-<!--底部资讯模块s-->
-<div class="footer">
-    <div class="footer_box w1200">
-        <div class="fl">
-            <img src="images/index_logo.png" alt="">
-        </div>
-        <div class="fl footer_tel clearfix">
-            <span class="quanguo">全国客服热线:400-862-0588</span>
-            <!--<div class="tel_photo"><a href="tel:400-862-0588" style="line-height:46px;color: white;font-weight: bold;font-size: 20px;"></a></div>-->
-            <div class="quanguo" style="height: 20px;"></div>
-            <div class="shouhou_tel">
-                <div>售后热线:010-56150581</div>
-                <div>售后热线:010-59419427</div>
-                <div>售后热线:010-58554409</div>
+<!--添加银行卡弹框s-->
+<div>
+    <div class="ui-dialog" style="width: 680px; ">
+        <div class="ui-dialog-title"> <span>添加银行卡</span>     </div>
+        <div class="ui-dialog-content" style="width: 100%;height: 370px;">
+            <div class="protocol">
+                <div class="protocol-con" style="height: 250px;">
+                    <div class="items address_box">
+                        <div class="address_mess mobal">
+                            <span class="address_name">*持卡人姓名：</span>
+                            <input class="address_inp" type="text">
+                            <div class="regex_box">
+                                <span class="right"></span>
+                            </div>
+                        </div>
+                        <div class="address_mess mobal">
+                            <span class="address_name">*支持银行：</span>
+                            <select class="address_inp " name="" id="">
+                                <option value="">请选择</option>
+                            </select>
+                            <div class="regex_box">
+                                <span class="wrong">请选择银行</span>
+                            </div>
+                        </div>
+                        <div class="address_mess mobal">
+                            <span class="address_name">*银行卡号：</span>
+                            <input class="address_inp" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="protocol-button" style="text-align:center">
+                    <button style="    display: inline-block;width: 200px;vertical-align: middle;">保存</button>
+                </div>
             </div>
-            <div class="btn_lt"><a href="https://shang.qq.com/wpa/qunwpa?idkey=75c0af55ca4a7d115e4024e10a087e9019d43ae0bc65c8ef850b4e92613e6660"> <img src="images/QQ.png" alt=""></a></div>
-            <div class="btn_lt ben_weixin"><a href="javascript:;"><img src="images/WeChat.png" alt=""></a></div>
-            <div class="MD-home-sidebar-js-list  weixin_public  animated" >
-                <img class="MD-home-sidebar-pub-code" src="images/erweima_public.png">
-                <span class="MD-home-sidebar-red-txt">关注公众号</span>
-                <p class="MD-home-sidebar-txt">社保动态早知道</p>
-            </div>
         </div>
-        <div class="footer_erweima clearfix">
-            <div class="erweima_ph">
-                <img src="images/Qrcode-ios.png" alt="">
-                <span>苹果下载</span>
-            </div>
-            <div class="erweima_ph" style="margin-left: 28px;">
-                <img src="images/Qrcode-android.png" alt="">
-                <span>安卓下载</span>
-            </div>
-        </div>
-        <ul class="footer_ul ">
-            <li>
-                <div class="footer_title">产品服务</div>
-                <div><a href="">缴社保</a></div>
-                <div><a href="">缴公积金</a></div>
-                <div><a href="">政策咨询</a></div>
-            </li>
-            <li>
-                <div class="footer_title">帮助中心</div>
-                <div><a href="">参保流程</a></div>
-                <div><a href="">停缴流程</a></div>
-                <div><a href="">补缴流程</a></div>
-            </li>
-            <li>
-                <div class="footer_title">新闻资讯</div>
-                <div><a href="">社保常识</a></div>
-                <div><a href="">政策资讯</a></div>
-                <div><a href="">公司资讯</a></div>
-            </li>
-            <li>
-                <div class="footer_title">关于人人保</div>
-                <div><a href="">关于人人保</a></div>
-                <div><a href="">公司大事记</a></div>
-                <div><a href="">地区合作</a></div>
-                <div><a href="">法律声明</a></div>
-            </li>
-        </ul>
-
-
-        <div style="clear: both;"></div>
-        <div class="Friendship_link ">
-            <h5 class="friend_a">友情链接：</h5>
-            <a href="">友情链接1</a>
-            <a href="">友情链接2</a>
-            <a href="">友情链接2</a>
-            <a href="">友情链接2</a>
-            <a href="">友情链接2</a>
-            <a href="">友情链接2</a>
-            <a href="">友情链接2</a>
-            <a href="">友情链接2</a>
-            <a href="">友情链接2</a>
-            <a href="">友情链接2</a>
-            <a href="">友情链接2</a>
-            <a href="">友情链接2</a>
-            <a href="">友情链接2</a>
-            <a href="">友情链接2</a>
-            <b class="more-friend"></b>
-        </div>
-        <hr color="#FFFFFF" style="display:block;width:100%;margin-top:20px;margin-bottom:20px;">
-        <div class="footer_mess">
-            <p>copyright©1999-<span id="MyYear">2018</span>  曼帕尔人力资源网  版权所有  京ICP备11022229号-7  人力资源服务证号110105010069号 </p>
-        </div>
+        <a class="ui-dialog-close" title="关闭"><span class="ui-icon ui-icon-delete"></span></a>
     </div>
+    <div class="ui-mask" ></div>
 </div>
-<!--底部资讯模块e-->
+<!--添加银行卡弹框e-->
 
 
+<script>
+    $(function () {
+        //    点击网站协议出现弹框
+        $(".bianji").click(function () {
+            $('.ui-mask').css('visibility','visible')
+            $('.ui-dialog').css('display','block')
+        })
+        $(".ui-dialog-close ,.protocol-button").click(function () {
+            $('.ui-dialog').css('display','none')
+            $('.ui-mask').css('visibility','hidden')
+
+        })
+    })
+</script>
 
 </body>
 </html>

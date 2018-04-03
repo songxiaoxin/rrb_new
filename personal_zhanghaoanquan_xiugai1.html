@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>修改密码</title>
+    <title>修改绑定手机</title>
     <meta name="description" content="人人保是第一家24小时在线社保代缴平台,上市企业,服务于世界500强客户,16年专注为中小微企业、自由职业者及个体工商户提供社保网上自助代缴服务,包括全国社保代理,社保代缴,社保补缴,代缴公积金,社保挂靠,社保转移,五险一金代办等,上人人保，彻底拒绝社保中断!">
     <link rel="stylesheet" href="css/swiper-4.1.0.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -120,28 +120,27 @@
             <div class="personal_right fl">
                 <div class="personal_zhanghao">
                     <div class="help_hot_top">
-                        修改登录密码
+                        修改绑定手机
                         <i style="width: 100px;"></i>
                     </div>
                     <div class="v-box show">
-
-                        <div class="item item1" id="">
-                            <span class="label">新密码：</span>
+                        <div class="item" id="bindMobileDiv">
+										<span class="label">
+											已验证手机：
+										</span>
                             <div class="fl">
-                                <input class="itxt" name="code" tabindex="1" id="code"  type="text">
-                                <div class="clr"></div>
-                                <div class="msg-error" id="" style="display: block;">sss</div>
-                                <div id="" class="msg-error" style="display:none"></div>
+                                <strong class="fz-14" id="mobileSpan">131*****746</strong>
                             </div>
-                            <div class="clr"></div>
                         </div>
-                        <div class="item item1" id="">
-                            <span class="label">请再输入一次新密码：</span>
+                        <div class="item" id="sendMobileCodeDiv">
+                            <span class="label">请填写手机校验码：</span>
                             <div class="fl">
-                                <input class="itxt" name="code" tabindex="1" id="code"  type="text">
+                                <input class="itxt" name="code" tabindex="1" id="code" disabled="disabled" type="text">
+                                <a  href="javascript:void(0)"  class="btn btn-10 ml10">获取短信校验码</a>
                                 <div class="clr"></div>
-                                <div class="msg-error" id="" style="display: block;">sss</div>
-                                <div id="" class="msg-error" style="display:none"></div>
+                                <div id="countDown" class="msg-text" style="display:block">校验码已发出，请注意查收短信，如果没有收到，你可以在<strong class="ftx-01">120</strong>秒后要求系统重新发送</div>
+                                <div class="msg-error" id="sendCode_error" style="display: none;"></div>
+                                <div id="code_error" class="msg-error" style="display:none"></div>
                             </div>
                             <div class="clr"></div>
                         </div>
@@ -158,10 +157,10 @@
                             </div>
                             <div class="clr"></div>
                         </div>
-                        <div class="item" id="authCodeDiv">
+                        <div class="item" id="">
                             <span class="label"></span>
                             <div class="fl">
-                                <button class="buy change_next "><a href="" style="color: white;">下一步</a></button>
+                                <button class="buy change_next "><a href="personal_zhanghaoanquan_xiugai_1.html" style="color: white;">下一步</a></button>
                             </div>
                             <div class="clr"></div>
                         </div>

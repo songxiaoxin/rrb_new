@@ -40,6 +40,7 @@
 .header .guquan{
     color: #7F7F7F;
     margin-top: 44px;
+    font-size: 12px;
 }
 .uc,.index-header .header-phone {
     font-family: arial,helvetica,sans-serif;
@@ -120,7 +121,8 @@
 .nav-list {
     float: right;
     /* width: 700px; */
-    height: 42px;
+    /* height: 42px; */
+    overflow: hidden;
     padding-top: 28px;
 }
 .nav-list a {
@@ -681,6 +683,8 @@ display: none;
 }
 .buy a{
     color: white;
+    display: inline-block;
+    width: 100%;
 }
 .free-btn{
 
@@ -1928,7 +1932,7 @@ display: none;
     width: 400px;
     height: 54px;
     color: #fff;
-    background: #e22;
+    background: #23c36b;
     border: 0;
     font-size: 16px;
     font-family: "Microsoft YaHei","Hiragino Sans GB";
@@ -3697,6 +3701,7 @@ display: none;
     font-size: 18px;
     text-align: center;
     line-height: 44px;
+    border: none;
     color: #24C26D;
     display: block;
     border-radius: 0;
@@ -3752,16 +3757,41 @@ display: none;
 .answer_pic{
     cursor: pointer;
 }
+
 .answer_txt{
+    width: 234px;
+    border: 2px solid #FBCD57;
+    background: white;
     position: absolute;
-    right: -84px;
-    width: 150px;
-    padding: 10px;
-    font-size: 12px;
-    line-height: 20px;
-    background: red;
+    left: 246px;
     display: none;
-    top: -13px;
+    padding: 0px 5px;
+    font-size: 13px;
+    top: -7px;
+}
+.answer_txt:before{
+    content: "";
+    border: 14px solid #FBCD57;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -28px;
+    top: 7px;
+}
+.answer_txt:after{
+    content: "";
+    border: 16px solid #fff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -28px;
+    top: 5px;
 }
 .yue_right{
     text-align: right;
@@ -3821,9 +3851,10 @@ display: none;
 .bank_card li{
     float: left;
     margin-left: 28px;
-    width: 266px;
-    height: 110px;
-    padding: 9px 14px 40px;
+    width: 293px;
+    height: 160px;
+    position: relative;
+    padding: 9px 14px 0;
     cursor: pointer;
     background: url("../images/moren_bg2.png") no-repeat;
 }
@@ -4121,41 +4152,206 @@ display: none;
     margin: 20px 0;
 }
 
+/*****************************收货地址页面******************************/
+.mod-comm {
+    padding: 10px 20px 20px;
+}
+.mt{
+    overflow: hidden;
+    zoom: 1;
+}
+.mod-comm .mt {
+    display: block;
+    padding: 10px 0;
+}
+.btn-5{
+    background-color: #f5fbef;
+    background-image: -moz-linear-gradient(top,#f5fbef,#eaf6e2);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#f5fbef),color-stop(1,#eaf6e2));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5fbef', endColorstr='#eaf6e2', GradientType='0');
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5fbef', endColorstr='#eaf6e2');
+    background-image: linear-gradient(to bottom,#f5fbef 0,#eaf6e2 100%);
+    border-radius: 2px;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #bfd6af;
+    padding: 2px 14px 3px;
+    color: #323333;
+}
+a.add-btn {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+    padding: 0 14px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    margin: 0 10px 0 0;
+}
+.ftx-03, .ftx03 {
+    color: #999;
+}
+.ftx-02, .ftx02 {
+    color: #71b247;
+}
+.mod-comm .mc {
+    line-height: 20px;
+}
+.easebuy-m {
+    border: 2px solid #e6e6e6;
+    margin: 0 0 10px;
+    padding: 20px;
+}
+.easebuy-m .smt {
+    padding-left: 10px;
+    line-height: 35px;
+    height: 35px;
+    position: relative;
+    display: inline-block;
+    display: block;
+    overflow: visible;
+}
+.easebuy-m .smt h3 {
+    float: left;
+    color: #666;
+}
+.easebuy-m .smt .extra .del-btn {
+    margin-top: 10px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    text-indent: 2em;
+    background: url(//misc.360buyimg.com/user/myjd-2015/css/i/close.png) no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.easebuy-m .smc .new-items {
+    position: relative;
+}
+.easebuy-m .smc .item-lcol {
+    width: 450px;
+    float: left;
+}
+.easebuy-m .smc .item span {
+    float: left;
+    width: 70px;
+    color: #999;
+    line-height: 20px;
+    text-align: right;
+}
+.easebuy-m .smc .item-lcol .fl {
+    width: 360px;
+}
+.easebuy-m .smt .extra {
+    float: right;
+    margin: 0 10px 0 0;
+}
+.easebuy-m .smc .item-rcol .extra {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.address_box{
+    padding: 20px;
+    font-size: 14px;
 
+    line-height: 36px;
+}
+.address_mess{
+    margin-bottom: 20px;
+}
+.address_box .address_mess .address_name{
+        display: inline-block;
+    float: left;
+    width: 150px;
+    text-align: right;
+}
+.address_box .address_mess .address_inp{
+    height: 36px;
+    line-height:36px;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
+    width: 220px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.address_box .address_mess .address_sele{
+    width: 100px;
+}
+.address_box .address_mess .address_text{
+    width:318px;
+    height: 100px;
+    line-height: 20px;
+    resize: none;
+}
+.address_box .address_mess .yanzheng_inp{
+    width: 140px;
+    height: 45px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+/***********************银行卡绑定*************************/
+.tixian_bank_box{
+    width: 680px;
+}
+.tixian_bank_box .bank_card  li{
+    margin-bottom: 20px;
+}
 
+.card_boot{
+    width: 85%;
+    position: absolute;
+    bottom: 20px;
+}
+.bianji_fr a{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+}
+.bianji_fr a img{
+    margin-right: 3px;
+}
+.bank_card .add_card_bg{
+    background: url(../images/add_card.png) no-repeat;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/************************我的消息************************/
+.my_message .my_message_ul li{
+    padding: 15px 10px;
+    background: #F7F7F7;
+    margin-bottom: 20px;
+    line-height: 23px;
+    position: relative;
+}
+.margin_20{
+    margin: 0 20px;
+}
+.my_message_content{
+    width: 800px;
+}
+.my_message_title{
+    font-size: 16px;
+    font-weight: bold;
+}
+.my_message_close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+/**************************申请停缴**************************************/
+.sqtingjiao_rules{
+    font-size: 14px;
+    line-height: 30px;
+    padding:0 45px 25px;
+    color: #939393;
+}
+.fapiao_message .itxt_tj{
+    width: 150px;
+    height: 40px;
+}
 
 
 
