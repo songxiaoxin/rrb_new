@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/index.css">
     <!--<script src="js/jquery-1.10.1.min.js"></script>-->
     <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.zclip.min.js"></script>
     <script type="text/javascript" src="js/Particleground.js"></script>
     <script src="js/index.js"></script>
 
@@ -132,22 +133,32 @@
                                 <li>
                                     <img src="images/ic_zhijieshare.png" alt="">
                                     直接分享：<span class="money_c">4</span>
+                                    <div class="answer_res"  style="margin-right: 100px;">
                                         <img class="answer_pic" src="images/ic_answer.png" alt="">
-                                    <div class="answer_txt" style="right: -40px;">
-                                        as大赛as大赛 as得而 撒扥 赛奥帆赛安抚
+                                        <div class="answer_txt" style="right: -40px;">
+                                            as大赛as大赛 as得而 撒扥 赛奥帆赛安抚
+                                        </div>
                                     </div>
+
+
                                 </li>
                                 <li>
                                     <img src="images/ic_jianjieshare.png" alt="">
                                     间接分享：<span class="money_c">1</span>
-                                       <img class="answer_pic" src="images/ic_answer.png" alt="">
+                                    <div class="answer_res" style="margin-right: 100px;">
+                                        <img class="answer_pic" src="images/ic_answer.png" alt="">
+                                        <div class="answer_txt" style="right: -40px;">
+                                            as大赛as大赛 as得而 撒扥 赛奥帆赛安抚
+                                        </div>
+                                    </div>
+
                                 </li>
 
                             </ul>
                         </div>
                         <div class="width33 clear yue_right">
                            <div style="margin: 10px 0;">
-                               <button class="buy tixian_btn"><a href="" >邀请好友</a></button>
+                               <button class="buy tixian_btn one-yaoqingfangshi" ><a href="javascript:;"  >邀请好友</a></button>
                                <a href="" style="color: #3fa3ff;">分享规则</a>
                            </div>
                             <div style="margin: 10px 0;">
@@ -213,12 +224,76 @@
 <!--帮助中心内容页e-->
 
 
+<!--<!--点击分享页面弹框开始-->
+<div class="theme-gonggong them-fenxiang" id="dialogShare">
+    <img class="theme-guanbi" src="images/TuiGuang/close1.png" alt="">
+    <div class="fenxiang-bgcolor"></div>
+    <div class="fenxiang-bg">
+        <div>
+            <div class="yaoqingbox-anniu" id="copy_input">复制</div>
+            <textarea id="mytext" class="yaoqingbox-content">https://m.rrb365.com/zhuanti/promotion/register.html?inviteUser=25584</textarea>
+        </div>
+
+        <div class="yaoqingbox2-content">
+            <div class="sns-share sns-share-component">
+                <a href="" class="qzone" target="_blank">
+                    <img src="images/TuiGuang/qzone.png" alt="">
+                </a>
+                <a href="" class="qq" target="_blank">
+                    <img src="images/TuiGuang/QQ.png" alt="">
+                </a>
+                <a href="" class="weibo" target="_blank">
+                    <img src="images/TuiGuang/weibo.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="yaoqingbox3-content" id="qrcodeCanvas">
+            <canvas width="100" height="100"></canvas>
+        </div>
+
+    </div>
+    <div class="fenxiang-rules">
+        <img style="display: inherit; margin-left: 30px; margin-top: 20px;" src="images/TuiGuang/text1.png" alt="">
+        <div>
+
+            <span>一，好友通过您发出的邀请链接注册，并下单支付成功，双方均可获得20元现金奖励哦！</span>
+            <span>二，您邀请成功的用户，再邀请其他用户下单支付成功后，他们均可得20元现金奖励，同时您可再得10元现金奖励</span>
+            <span>三，您活动中获得的现金奖励，可随时充值至余额用于缴费，也可以提现至您本人名下银行账户，3个工作日内到账。</span>
+            <span>四，活动中如果发现通过作弊手段获得奖励的，将取消奖励，并追究其法律责任</span>
+            <span>五，本活动最终解释权为人人保所有。</span>
+        </div>
+
+    </div>
+</div>
+<div class="theme-popover-mask1" ></div>
+<!--点击分享页面弹框结束-->
+
 <script>
-    $(".answer_pic").hover(function(){
-        $(this).siblings('.answer_txt').css('display','block')
+    $(".answer_res").hover(function(){
+        $(this).children('.answer_txt').css('display','block')
     },function(){
-        $(this).siblings('.answer_txt').css('display','none')
+        $(this).children('.answer_txt').css('display','none')
     });
+    $('.one-yaoqingfangshi').click(function () {
+        $('.theme-popover-mask1').css('visibility', 'visible')
+        $('.them-fenxiang').css('visibility','visible')
+    });
+    $('.theme-guanbi').click(function () {
+        $('.theme-popover-mask1').css('visibility', 'hidden')
+        $('.them-fenxiang').css('visibility', 'hidden')
+    });
+//点击复制操作
+    $('#copy_input').zclip({
+        path: 'js/ZeroClipboard.swf',
+        copy: function(){//复制内容
+            return $('#mytext').val();
+        },
+        afterCopy: function(){//复制成功
+            alert("复制成功！");
+        }
+    });
+
+
 </script>
 
 </body>
