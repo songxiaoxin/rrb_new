@@ -3768,6 +3768,7 @@ display: none;
     border: 2px solid #FBCD57;
     background: white;
     position: absolute;
+    line-height: 25px;
     left: 46px;
     display: none;
     padding: 0px 5px;
