@@ -1726,7 +1726,38 @@ display: none;
     border: none;
     background-image: url(../images/bg_btn.png);
 }
-
+/********************************增值服务申请服务*****************************************/
+.zzfw_select .zzfw_select_ul{
+    overflow: hidden;
+    width: 830px;
+}
+.zzfw_select .zzfw_select_ul li{
+    width: 196px;
+    height: 106px;
+    cursor: pointer;
+    margin: 0 20px 20px 0;
+    padding:18px 20px;
+    background: url("../images/squre_bg.png") no-repeat;
+}
+.zzfw_select .zzfw_select_ul .chose{
+    background: url("../images/choose_bg.png") no-repeat;
+}
+.zzfw_select .zzfw_select_ul li .zzfw_tit{
+    font-size: 16px;
+}
+.zzfw_select .zzfw_select_ul li .zzfw_cont{
+    font-size:12px;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    color:#686868;
+}
+.zzfw_select .zzfw_select_ul li .zzfw_money{
+    font-size: 16px;
+}
+.zzfw_select .zzfw_select_ul li .zzfw_money em{
+    font-size: 12px;
+}
 
 /******************************登录页面**********************************************/
 .login_banner{
@@ -3754,10 +3785,15 @@ display: none;
     width: 26px;
     height: 26px;
 }
+
 .answer_res{
     position: relative;
     float: right;
     /*margin-right: 110px;*/
+}
+.answer_res_0{
+    float: left;
+    margin: 9px;
 }
 .answer_pic{
     cursor: pointer;
@@ -3768,12 +3804,15 @@ display: none;
     border: 2px solid #FBCD57;
     background: white;
     position: absolute;
-    line-height: 25px;
     left: 46px;
     display: none;
     padding: 0px 5px;
     font-size: 13px;
     top: 0px;
+}
+.answer_txt1{
+    top:-9px;
+    width: 560px;
 }
 .answer_txt:before{
     content: "";

@@ -13,7 +13,7 @@ button,input[type=button],input[type=reset],input[type=submit]{cursor:pointer;-w
 .vm{vertical-align:middle}
 .clearfix:after{content:" ";display:block;clear:both;height:0;visibility:hidden}
 *+html .clearfix,* html .clearfix{zoom:1}
-.fl{float:left;/* width: 485px; */overflow: hidden;}
+.fl{float:left;/* width: 485px; *//* overflow: hidden; */}
 .fr{float:right;}
 select{height:26px; line-height:26px; padding:2px 0}
 body{background:#fff;min-width: 1200px;}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>扫码支付页面</title>
+    <link rel="stylesheet" href="css/wechattrade.css">
+</head>
+<body>
+<form>
+    <div>
+    </div>
+
+    <div>
+
+
+    </div>
+    <div class="header">
+        <div class="wrap">
+            <div class="logo">
+                <a href="http://www.rrb365.com/"><img src="images/logo_03.png"></a>
+            </div>
+            <div class="logo" style="margin: 20px;">
+                <a href="javascript:;"><img src="images/zhifu_logo.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="topwrap box-shadow-def">
+        <div class="innerwrap box-border-def hide-coupon">
+            <div class="innercnt">
+                <div class="innercnt-wrap clearfix">
+                    <div class="orders show-orders-single" id="order_wrap">
+                        <div class="orders-single">
+                            <h2 class="orders-title">
+                                微信支付</h2>
+                            <div class="company">
+                                曼帕尔人力资源（北京）有限公司</div>
+                            <div class="orders-money">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pay_total_money" class="pay-money">
+                <div class="money-line">
+                    应付：<strong id="total_fee_show" class="money">
+                    5000000</strong>元</div>
+            </div>
+        </div>
+
+        <div id="payMsg">
+            <div class="area_bd" id="pay_succ" style="display:none">
+                <i class="icon110_msg pngFix"></i>
+                <h3 class="pay_msg_t">
+                    购买成功</h3>
+
+                <p class="pay_msg_desc">
+                    <span id="redirectTimer">8</span>秒后返回商户网页。
+                </p>
+            </div>
+            <div class="area_bd" id="pay_error" style="display:none">
+                <i class="icon60_msg pngFix"></i>
+                <h3 class="pay_msg_t">
+                    无法支付</h3>
+                <p class="pay_msg_desc">
+                    商品金额大于银行卡快捷支付限额</p>
+            </div>
+            <div><p style="padding:  60px 0 20px 233px">距离二维码过期还剩 <span style="color: red;">45</span>秒，过期后请刷新页面重新获取二维码。</p></div>
+            <div class="area" id="qr_normal">
+                <div class="fl_l">
+                    <span class="qr_img_wrapper">
+                        <img class="qrcode" alt="二维码" id="QRcode" src="images/anli.png" >
+                    </span>
+                    <div class="msg_default_cg">
+                        <i class="icon60_qr pngFix"></i>
+                        <p>
+                            请使用微信扫码<br>
+                            二维码以完成支付
+                        </p>
+                    </div>
+                    <div class="fonts_26">
+                        <a href="">< 选择其他支付方式</a>
+                    </div>
+                </div>
+                <div class="fl_l" style="margin-left: 100px;">
+                    <img src="images/WeChat_platform.png" alt="">
+                </div>
+                <div class="msg_default_box" style="display:none">
+                    <i class="icon70_qr pngFix"></i>
+                    <p>
+                        <strong>扫描成功</strong><br>
+                        请在手机确认支付</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;margin: 20px auto;">
+
+    </div>
+    <div class="bottom">曼帕尔人力资源（北京）有限公司&nbsp;&nbsp;&nbsp;北京市朝阳区远洋国际中心C座-801（100025）（地铁：四惠站）&nbsp;&nbsp;&nbsp; 客服热线：400-862-0588
+    </div>
+</form>
+</body>
+</html>
