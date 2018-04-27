@@ -3,7 +3,7 @@ $(function () {
     if ($(window).width() > 768) {
         $(".taocan-box li").mouseover(function () {
             $(this).css("position", "relative");
-            $(this).animate({"top": "-20px"}, 100);
+            $(this).animate({"top": "-5px"}, 100);
         }).mouseleave(function () {
             $(this).animate({position: "static", top: "0"}, 100);
         });
@@ -36,10 +36,31 @@ $(function () {
 //行业信息模块
     $(window).scroll(function(){
         var height = window.pageYOffset;
-        if(height > 400){
-            $('.icon_box').addClass('flipInX')
+        if(height>0){
+            $('.jsb_animal_1').addClass('c_visible fadeInUp')
         }
-    })
+        if(height > 100){
+            $('.icon_box').addClass('c_visible fadeInUp')
+        }
+        if(height>500){
+            $('.index_module_1').addClass('c_visible fadeInUp');
+        }
+        if(height>800){
+            $('.jsb_animal_2').addClass('c_visible fadeInUp')
+        }
+        if(height>1100){
+            $('.index_module_2').addClass('c_visible fadeInUp');
+        }
+        if(height>1400){
+            $('.jsb_animal_3').addClass('c_visible fadeInUp')
+        }
+        if(height>1800){
+            $('.index_module_3').addClass('c_visible fadeInUp');
+        }
+        if(height>2300){
+            $('.jsb_animal_4').addClass('c_visible fadeInUp')
+        }
+    });
 
     //企业定制服务
     $(".qiye_btn").click(function () {
